@@ -18,7 +18,6 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next){
-    console.log(req)
     collection.insert({
         IntegrationId: req.body.IntegrationId,
         EntityType: req.body.EntityType,
