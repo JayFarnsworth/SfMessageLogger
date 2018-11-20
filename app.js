@@ -10,7 +10,7 @@ var messagesRouter = require('./routes/messages');
 
 
 const monk = require('monk');
-const url = 'mongodb://<vertafore>:<P@ssw0rd@d>s029267.mlab.com:29267/heroku_s91v4rft';
+const url = 'mongodb://<vertafore>:<P@ssw0rd@d>s029267.mlab.com:29267/heroku_s91v4rft/messages';
 const db = monk(url);
 db.then(()=>{
     console.log('Connected to server')
