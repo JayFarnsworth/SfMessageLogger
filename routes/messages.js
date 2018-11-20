@@ -8,7 +8,7 @@ const db = monk(url);
 const collection = db.get('messages');
 
 router.get('/', function(req, res, next) {
-  console.log('hello')
+  console.log(db)
   collection.find()
     .then(result => {
         console.log('hello1')
