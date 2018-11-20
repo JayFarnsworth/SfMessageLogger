@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 const monk = require('monk');
-const url = 'localhost:3001/sfmessages';
+const url = 'mongodb://vertafore:P@ssw0rd@ds029267.mlab.com:29267/heroku_s91v4rft/sfmessages';
 const db = monk(url);
 
 const collection = db.get('messages');
