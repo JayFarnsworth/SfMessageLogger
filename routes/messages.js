@@ -5,7 +5,10 @@ const monk = require('monk');
 const url = 'mongodb://vertafore1:passw0rd@ds029267.mlab.com:29267/heroku_s91v4rft/';
 const db = monk(url);
 
-const collection = db.get('messages');
+const collection = db.get('messages')
+db.then(()=>{
+    console.log('connected to db')
+})
 
 router.get('/', function(req, res, next) {
   console.log(db)
