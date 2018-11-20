@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 const monk = require('monk');
-const url = 'mongodb://vertafore:P@ssw0rd@ds029267.mlab.com:29267/heroku_s91v4rft/';
+const url = 'mongodb://vertafore1:passw0rd@ds029267.mlab.com:29267/heroku_s91v4rft/';
 const db = monk(url);
 
 const collection = db.get('messages');
