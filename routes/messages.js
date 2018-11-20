@@ -11,10 +11,8 @@ db.then(()=>{
 })
 
 router.get('/', function(req, res, next) {
-  console.log(db)
   collection.find()
     .then(result => {
-        console.log('hello1')
         res.send(result)
     })
 });
