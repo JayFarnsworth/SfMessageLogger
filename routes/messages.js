@@ -19,14 +19,14 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req, res, next){
     collection.insert({
-        IntegrationId: req.body.IntegrationId,
-        EntityType: req.body.EntityType,
-        EntityId: req.body.EntityId,
-        OperationType: req.body.OperationType
+        integrationId: req.body.integrationId,
+        entityType: req.body.entityType,
+        entityId: req.body.entityId,
+        operationType: req.body.operationType
     })
       .then(resp=>{
-          console.log(`POST to db: IntegrationId: ${req.body.IntegrationId}`)
-          res.send(`IntID: ${req.body.IntegrationId} added to db`)
+          console.log(`POST to db: integrationId: ${req.body.integrationId}`)
+          res.send(`IntID: ${req.body.integrationId} added to db`)
       })
 })
 
